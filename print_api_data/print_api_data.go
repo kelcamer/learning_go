@@ -25,6 +25,7 @@ func main(){
 
 
 	// by default the API returns byte slices, convert it to string to read it
+	// map basically is a dictionary that uses string as key and maps to interface which can be any type
 	var data map[string]interface{}
 
 	error = json.Unmarshal(body, &data)
